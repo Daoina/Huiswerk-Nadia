@@ -13,8 +13,16 @@ class ofApp : public ofBaseApp{
 private:
     float x;
     float y;
+    float xrect;
+    float yrect;
+    float xtri;
+    float ytri;
     float speedx;
     float speedy;
+    float speedxrect;
+    float speedyrect;
+    float speedxtri;
+    float speedytri;
     int radius;
     ofColor color;
     
