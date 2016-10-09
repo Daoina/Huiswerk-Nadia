@@ -71,5 +71,4 @@ void ofApp::analogPinChanged(const int& pin){
         if (radius != balls[i].radius) {
             balls[i].radius = radius;
         }
-        
     }}
