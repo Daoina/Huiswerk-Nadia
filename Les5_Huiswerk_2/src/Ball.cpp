@@ -38,7 +38,7 @@ void Ball::update() {
 }
 
 void Ball::draw() {
-    ofSetCircleResolution(100);
+    ofSetSphereResolution(100);
     ofSetColor(color);
-    ofDrawCircle(x, y, radius);
+    ofDrawSphere(x, y, radius);
 }
