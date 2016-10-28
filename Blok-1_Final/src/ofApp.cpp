@@ -39,11 +39,12 @@ void ofApp::digitalPinChanged(const int& pin){
     ofLog() << "Digital pin" << pin << " changed to " << arduino.getDigital(pin) << endl;
     if(arduino.getDigital(pin) == 1)
     {
-    
+//    Checkt de status van de push button, als die true is gaat hij 90 graden draaien
         if(open){ofLog()<<"Servo was open, gaat nu dicht"<< endl;
             open=false;
             arduino.sendServo(9, 90);
         
+//            Als de knop wordt ingedrukt draait hij terug naar 0 graden.
         }
         else{ofLog()<<"Servo was dicht, gaat nu open"<< endl;
             open=true;
